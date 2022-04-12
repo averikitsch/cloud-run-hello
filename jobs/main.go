@@ -68,7 +68,7 @@ func failRateToFloat(s string) (float64, error) {
 
 	// Check that rate is valid
 	if failRate < 0 || failRate > 1 {
-		return failRate, fmt.Errorf("Invalid FAIL_RATE value: %f. Must be a float between 0 and 1 inclusive.", failRate)
+		return failRate, fmt.Errorf("Invalid FAIL_RATE value: %f. Must be a float between 0 and 1 inclusive", failRate)
 	}
 
 	return failRate, err

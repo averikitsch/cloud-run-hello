@@ -103,7 +103,7 @@ func randomFailure(config Config) error {
 	randomFailure := rand.Float64()
 
 	if randomFailure < config.failRate {
-		return fmt.Errorf("Task #%s, Attempt #%s failed.", config.taskNum, config.attemptNum)
+		return fmt.Errorf("Task #%s, Attempt #%s failed :(", config.taskNum, config.attemptNum)
 	}
 	return nil
 }
